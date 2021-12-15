@@ -1,0 +1,132 @@
+<router-outlet></router-outlet>
+
+<!--NAVEGADOR-->
+<ul class="nav nav-pills justify-content-end" style="background:#E5E5E5;">
+  <form class="form-inline mt-1">
+    <li class="nav-item">
+      <input style="border: gray;"  type="text" placeholder="Escribe" >
+      <button class="btn btn-secondary" type="submit">@</button>
+    </li>
+  </form>
+  <li class="nav-item">
+    <a class="nav-link disabled">MXN-</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">ESP-</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#"><img src="../assets/img/mexico.png" alt="Cargando imagen" class="img-fluid" width="30px" height="30px"></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#" style="color: black;">Regístrate</a>
+  </li>
+  <li class="nav-item mt-1 mr-2">
+    <button class="btn btn-danger" href="#" style="color: white;">Iniciar Sesión</button>
+  </li>
+</ul>
+
+<!--CARUSEL-->
+<div class="carousel">
+  <div class="carousel__contenedor">
+    <button aria-label="Anterior" class="carousel__anterior">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <div class="carousel__lista">
+      <div class="carousel__elemento">
+        <img src="../assets/img_carusel/a.jpg" alt="Cargando img .." height="200px">
+      </div>
+      <div class="carousel__elemento">
+        <img src="../assets/img_carusel/bc.jpg" alt="Cargando img .." height="200px">
+      </div>
+      <div class="carousel__elemento">
+        <img src="../assets/img_carusel/bcs.jpg" alt="Cargando img .."  height="200px">
+      </div>
+      <div class="carousel__elemento">
+        <img src="../assets/img_carusel/chia.jpg" alt="Cargando img .." height="200px">
+      </div>
+      <div class="carousel__elemento">
+        <img src="../assets/img_carusel/co.jpg" alt="Cargando img .."  height="200px">
+      </div>
+      <div class="carousel__elemento">
+        <img src="../assets/img_carusel/gue.jpg" alt="Cargando img .." height="200px">
+      </div>
+      <div class="carousel__elemento">
+        <img src="../assets/img_carusel/j.jfif" alt="Cargando img .."  height="200px">
+      </div>
+      <div class="carousel__elemento">
+        <img src="../assets/img_carusel/mi.jpg" alt="Cargando img .." height="200px">
+      </div>
+    </div>
+
+    <button aria-label="Siguiente" class="carousel__siguiente">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+
+  <div role="tablist" class="carousel__indicadores"></div>
+</div>
+
+<!--CONTENIDO-->
+<div class="container">
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="row" style="border-bottom:solid pink; border-top:solid pink;">
+          <div class="col-md-5"><div class="row">Restaurante Sylvestre Polanco</div></div>
+          <div class="col-md-5"><div class="row" style="color: pink; font-weight: bold;float: right;">-10% en el menú </div></div>
+          <div class="col-md-2"><div class="row" style="float: right;"><i class="fa fa-star"></i></div></div>
+        </div>
+        <div class="row">
+          <div class="col-md-3"><small><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>5</small></div>
+          <div class="col-md-3"><small><i class="far fa-comment-alt"></i>Review</small></div>
+          <div class="col-md-3"><small><i class="far fa-money-bill-alt"></i> $800-$1200</small></div>
+          <div class="col-md-3"><small><i class="fas fa-utensils"></i> Restaurantes,Argentina,Cortes de carne</small></div>
+        </div>
+        <div class="row mt-3">
+          <app-calendario></app-calendario>
+        </div>
+        <div class="row mt-3">
+          <app-tabs></app-tabs>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <div class="row"><strong>AMENIDADES</strong></div>
+            <div class="row mb-3" style="border-bottom:solid pink;"></div>
+            <app-lista-a></app-lista-a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row"><strong>OPINIONES</strong></div>
+            <div class="row mb-3" style="border-bottom:solid pink;"></div></div>
+            <div class="row justify-content-center"><div class="col-md-3"><h2 style="color: pink;font-size: 80px;">5</h2></div></div>
+            <div class="row justify-content-center"><div class="col-md-3"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div></div>
+            <div class="row justify-content-center"><div class="col-md-3"><small style="font-size: 10px;">0 Opiniones</small></div></div>
+            <div class="row justify-content-center"><div class="col-md-3">5<i class="fa fa-star"></i><input style="background: gray;">0</div></div>
+            <div class="row justify-content-center"><div class="col-md-3">4<i class="fa fa-star"></i><input style="background: gray;">0</div></div>
+            <div class="row justify-content-center"><div class="col-md-3">3<i class="fa fa-star"></i><input style="background: gray;">0</div></div>
+            <div class="row justify-content-center"><div class="col-md-3">2<i class="fa fa-star"></i><input style="background: gray;">0</div></div>
+            <div class="row justify-content-center"><div class="col-md-3">1<i class="fa fa-star"></i><input style="background: gray;">0</div></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row" >¿CÓMO LLEGAR?</div>
+        <div class="row" style="border-bottom:solid gray;"></div>
+        <div class="row mt-3">
+          <div class="border border-secondary"><img src="../assets/img/google_map.jfif" alt="Cargando..."></div>
+        </div>
+        <div class="row mt-3">VER MENÚ</div>
+        <div class="row" style="border-bottom:solid gray;"></div>
+        <div class="row mt-3">HORARIOS</div>
+        <div class="row mb-3" style="border-bottom:solid gray;"></div>
+        <div class="row"><div class="col-md-6"><i class="fa fa-clock"></i> Lunes 13:00-23:00</div></div>
+        <div class="row"><div class="col-md-6"><i class="fa fa-clock"></i> Martes 13:00-23:00</div></div>
+        <div class="row"><div class="col-md-6"><i class="fa fa-clock"></i> Miercoles 13:00-23:00</div></div>
+        <div class="row"><div class="col-md-6"><i class="fa fa-clock"></i> Jueves 13:00-23:00</div></div>
+        <div class="row"><div class="col-md-6"><i class="fa fa-clock"></i> Viernes 13:00-23:00</div></div>
+        <div class="row"><div class="col-md-6"><i class="fa fa-clock"></i> Sabado 13:00-23:00</div></div>
+      </div>
+    </div>
+  </div>
+</div>
